@@ -47,7 +47,7 @@ public abstract class DataSource {
     }
 
     //this is to set the 3 new columns
-    public void populateNewColumns(Report rep) {
+    protected void populateNewColumns(Report rep) {
         //only if UQL_OC_MMB_MS and UQL_OC_MMB_MS_PC having values, then can calculate the cols, otherwise just blank
         if(!rep.getUQL_OC_MMB_MS().isBlank() && !rep.getUQL_OC_MMB_MS_PC().isBlank()) {
             String ms_pc = Algorithm.calDifference(Float.parseFloat(rep.getUQL_OC_MMB_MS()), Float.parseFloat(rep.getUQL_OC_MMB_MS_PC()));
