@@ -1,0 +1,11 @@
+{
+  "groups": [],
+  "properties": [
+    {
+      "name": "dataSource",
+      "type": "java.lang.String",
+      "description": "Description for dataSource."
+    }
+  ],
+  "hints": []
+}
